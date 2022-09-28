@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>PyScript Test</title>
+
+    <!-- Import PyScript -->
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+    <!-- Import Python modules -->
+    <py-env>
+        - numpy
+    </py-env>
+
+</head>
+<body>
+    <!-- All your other HTML -->
+
+    <div>
+        <button id="run-button">Run</button>
+    </div>
+    <div>
+        <button id="clear-button">Clear</button>
+    </div>
+    <div>
+        <button id="add-memory-button">Add memory</button>
+    </div>
+
+<!-- <div id="canvas" style="width: 100%; height: 100%"></div> -->
+  <canvas id="canvas" width="400px" height="400px"
+  </canvas>
+    <!-- <div id="canvas" style="width: 100%; height: 100%"></div> -->
+
+    
+    <!-- Python Script Here -->
+    <py-script src="./script.py" output="canvas"></py-script>
+
+
+    <!-- <py-repl></py-repl> -->
+
+</body>
+</html>
