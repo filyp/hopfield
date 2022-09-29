@@ -6,7 +6,6 @@
 # https://gist.github.com/jtpio/ac9fa41239fd0098ede03ec042aec574
 # comparison of other libraries: https://github.com/flexxui/flexx/wiki/PyScript-vs-X
 
-from audioop import add
 import numpy as np
 from time import time
 
@@ -104,6 +103,8 @@ async def main():
     clear(None)
 
     canvas.addEventListener("click", create_proxy(on_click))
+    # canvas.addEventListener("wheel", create_proxy(on_click))
+    # canvas.addEventListener("mousemove", create_proxy(on_click))
     document.getElementById("run-button").addEventListener("click", create_proxy(run))
     document.getElementById("clear-button").addEventListener("click", create_proxy(clear))
     document.getElementById("add-memory-button").addEventListener("click", create_proxy(add_memory))
